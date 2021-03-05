@@ -2,10 +2,84 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
 
+
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
+
+:root{
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Mulish", serif;
+}
+
+.hamburguer{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 4%;
+    top: 1rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: right 0.6s;
+}
+
+.line{
+    width: 100%;
+    height: .08rem;
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 1px black;
+    transition: .7s;
+}
+.show-menu #line1{
+    transform: rotate(45deg) translate(.3rem, .38rem);
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+.show-menu #line3{
+    transform: rotate(-45deg) translate(.3rem, -.4rem);;
+}
+
+.hamburguer span{
+    position: absolute;
+    right: -6rem;
+    height: .7rem;
+    width: 4rem;
+    background-color: #b300cc;
+    color: white;
+    font-family: var(--font-action);
+    padding: .7rem;
+    border-radius: 6px;
+    text-transform:capitalize;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamburguer span::before{
+    content: "";
+    position: absolute; 
+    border-right: .5rem solid #b300cc;
+    border-left: .5rem solid transparent;
+    border-top: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+    
+}
+
+.show-menu .hamburguer:hover span{
+    opacity: 100;
+    transition-delay: 0.17s;
+}*/
 
 header{
     width: 100%;
@@ -46,7 +120,7 @@ header{
 .banner h1{
     color: white;
     font-size: 3.5rem;
-    font-family:"Baloo Da 2", serif;
+    font-family: var(--font-primary);
     font-weight: 200;
     text-shadow: .3rem .4rem 2px rgba(0,0,0, .4);
     line-height: 3.5rem;
@@ -55,7 +129,7 @@ header{
     opacity: 0;
 }
 .banner  p{
-    font-family: "Josefin Slab", serif;
+    font-family: var(--font-secundary);
     color: white;
     font-size: 2rem;
     text-shadow: .2rem .2rem rgba(0,0,0, .4);
@@ -64,7 +138,7 @@ header{
     opacity: 0;
 }
 .banner button{
-    font-family: "Muli", serif;
+    font-family: var(--font-action);
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -96,4 +170,67 @@ header{
         transform: translateY(0) rotateY(0);
         opacity: 1;
     }
+}
+
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: right 0.6s;
+}
+
+.show-menu .sidebar{
+    right: 0;
+}
+.show-menu .hamburguer{
+    right: 17rem;
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .5rem;
+   
+}
+.menu-link{
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #454545;
+    transition: 0.5s;
+}
+
+.menu-link:hover{
+    color: #b300cc;
+    font-size: 2.1rem;
+    
+}
+
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    font-size: 2.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #454545;
+}
+
+.social-media i{
+    color: #454545;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media i:hover{
+    color: #860097;
 }
