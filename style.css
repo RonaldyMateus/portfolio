@@ -16,13 +16,17 @@
     --font-action: "Mulish", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
     width: 2rem;
     height: 2rem;
     position: fixed;
     right: 4%;
     top: 1rem;
-    z-index: 100;
+    z-index: 110;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -180,6 +184,7 @@ header{
     top: 0;
     right: -20rem;
     transition: right 0.6s;
+    z-index: 100;
 }
 
 .show-menu .sidebar{
@@ -586,4 +591,54 @@ header{
     100% {
         font-size: 1.3rem;
     }
+}
+
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #161416;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-top{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #ff00cc;  
+    background: #7F00FF; 
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF); 
+    background: linear-gradient(to right, #E100FF, #7F00FF);     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    border-radius: 10px;  
+    box-shadow: 0 0.1rem 0.6rem #00000009;        
 }
