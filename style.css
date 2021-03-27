@@ -508,14 +508,14 @@ header{
     margin-top: 1.3rem;
 }
 
-.sessao-orcamento{
+ .sessao-orcamento{
     width: 100%;
     height: 100vh;
     background-image: url(imagens/bg-orcamento.jpg);
     object-fit: cover   ;      
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .orcamento-wrapper{
