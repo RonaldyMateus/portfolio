@@ -2,15 +2,20 @@
 @media (max-width: 700px){
     .banner h1{
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: .2rem;
     }
     .banner p{
         font-size: 1.3rem;
+       
     }
     .banner{
         position: absolute;
-        top: 10%;
+        top: 5%;
         left: 15%; 
+    }
+    .banner button{
+        font-size: .6rem;
+        padding: 12px;
     }
 }
 @media (max-width: 975px){
@@ -50,7 +55,7 @@
         align-items: center;
     }
     .card{
-        width: 60%;
+        width: 70%;
         position: relative;
         padding-left: 20%;
         padding-top: 5px;
@@ -75,10 +80,28 @@
 }
 @media (max-width: 600px){
     .sessao-orcamento h1{
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+    .sessao-orcamento form{
+        position: absolute;
+        display: grid;
+    }
+    .sessao-orcamento label{
+        background-color: white;
+        left: -30%;
+        position: relative;
+        font-size: 1.4rem;
+    }
+    .sessao-orcamento input{
+        left: -42px;
+        position: relative;
+    }
+    .btn-orcamento{
+        position: relative;
+        right: 10px;
     }
     .orcamento-wrapper{
-        width: 80%;
+        width: 90%;
     }
     .btn-orcamento:hover{
         animation: none
