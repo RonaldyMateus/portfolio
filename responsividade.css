@@ -1,0 +1,101 @@
+
+@media (max-width: 700px){
+    .banner h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .banner p{
+        font-size: 1.3rem;
+    }
+    .banner{
+        position: absolute;
+        top: 10%;
+        left: 15%; 
+    }
+}
+@media (max-width: 975px){
+    .conhecimentos{
+        width: 100%;
+        display:list-item;  
+    }
+    .conhecimento{
+        justify-content: center;
+        align-items: center;
+        padding-left: 25%;
+    }
+    .conhecimento:nth-child(1){
+        width:50%;
+    }
+    .conhecimento:nth-child(2){
+        width: 50%;
+    }
+    .conhecimento:nth-child(3){
+        width: 50%;
+    } 
+    .conhecimento:nth-child(4){
+        width: 50%;
+    } 
+    .conhecimento:nth-child(5){
+        width: 50%;
+    } 
+    .conhecimento:nth-child(6){
+        width: 50%;
+    }
+    .conhecimentos-img-wrapper img{
+        width: 0%;
+    }
+    .projetos{
+        display: list-item;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 60%;
+        position: relative;
+        padding-left: 20%;
+        padding-top: 5px;
+    }
+    .card-info{
+        opacity: 1;
+        visibility:visible;
+    }
+    .card-img-wrapper img{
+        opacity: 20%;
+    }
+}
+@media (max-width: 670px){
+    .field{
+        width: 100%;
+    }
+}
+@media (max-width: 918px){
+    .sessao-orcamento h1{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 600px){
+    .sessao-orcamento h1{
+        font-size: 1rem;
+    }
+    .orcamento-wrapper{
+        width: 80%;
+    }
+    .btn-orcamento:hover{
+        animation: none
+    }
+}
+@media (min-width: 500px) and (max-width: 1213px){
+    .footer-content {
+        display: list-item;
+        padding-left: 7%;
+    }
+    .footer-content p{
+        font-size: 1.3rem;
+        width: 300px;
+    }
+    .social-list a{
+        margin: 0 1rem;
+        color: #a7a7a7;
+        font-size: 1rem;
+    }
+}
